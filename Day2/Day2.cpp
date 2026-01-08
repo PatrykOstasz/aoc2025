@@ -103,10 +103,11 @@ unsigned long long findWrongIDs2(const std::vector<std::string>& ranges) {
 int main()
 {
 	auto ranges = readFile("input.txt");
-	//auto solution1 = findWrongIDs1(ranges);
+	auto solution1 = findWrongIDs1(ranges);
 	auto solution2 = findWrongIDs2(ranges);
 
 
-	std::cout << "SOLUTION1 = " << solution2 << std::endl;
+	std::cout << "SOLUTION1 = " << solution1 << std::endl;
+	std::cout << "SOLUTION2 = " << solution2 << std::endl;
 }
 
